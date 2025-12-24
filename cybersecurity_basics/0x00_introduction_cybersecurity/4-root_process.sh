@@ -1,2 +1,2 @@
 #!/bin/bash
-ps -u "$1" -o user=,pid=,%cpu=,%mem=,vsz=,rss=,tty=,stat=,start=,time=,command= | grep -v ' 0 0 '
+ps aux | awk -v u="$1" '$1==u' | grep -vE ' 0 +0 '
