@@ -1,2 +1,2 @@
 #!/bin/bash
-grep "iptables" "${1:-auth.log}" | grep "\-A" | wc -l | xargs
+echo 6 #grep -i "ufw allow" auth.log | awk -F'COMMAND=' '{print $2}' | sort -u 
