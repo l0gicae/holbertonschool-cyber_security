@@ -1,0 +1,24 @@
+┌──(kali㉿kali)-[~/…/holb/holbertonschool-cyber_security/network_security/0x01_passive_reconnaissance]
+└─$ dig @10.42.162.228 holberton.passive.hbtn ANY 
+
+; <<>> DiG 9.20.11-4+b1-Debian <<>> @10.42.162.228 holberton.passive.hbtn ANY
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15189
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: f74d96a0f8aacb5a0100000069511f032a8e1c696a1e78b9 (good)
+;; QUESTION SECTION:
+;holberton.passive.hbtn.                IN      ANY
+
+;; ANSWER SECTION:
+holberton.passive.hbtn. 604800  IN      TXT     "Holberton Sec Lab - abed788b37da189c94f4cc3370707e10"
+holberton.passive.hbtn. 604800  IN      A       127.0.0.1
+
+;; Query time: 208 msec
+;; SERVER: 10.42.162.228#53(10.42.162.228) (TCP)
+;; WHEN: Sun Dec 28 07:13:55 EST 2025
+;; MSG SIZE  rcvd: 160
